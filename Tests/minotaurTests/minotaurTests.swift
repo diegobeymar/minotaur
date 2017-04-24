@@ -32,17 +32,6 @@ func resultsOf (goal: Goal, variables: [Variable]) -> [[Variable: Wrapper]] {
 
 class minotaurTests: XCTestCase {
 
-    func name() {
-      let x = Variable(named: "x")
-      let y = Variable(named: "y")
-
-      let system = (x ≡ y) && (y ≡ Value(0) || y ≡ Value(1))
-      let solutions = solve(system)
-      for solution in solutions {
-          print(" TEST x = \(solution[x]), y = \(solution[y])")
-      }
-    }
-
     func testDoors() {
         let from = Variable (named: "from")
         let to   = Variable (named: "to")
@@ -96,7 +85,7 @@ class minotaurTests: XCTestCase {
 
     static var allTests : [(String, (minotaurTests) -> () throws -> Void)] {
         return [
-          ("logic", name),
+
             ("testDoors", testDoors),
             ("testEntrance", testEntrance),
             ("testExit", testExit),
