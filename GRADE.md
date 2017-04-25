@@ -2,7 +2,7 @@ Automated Testing:
   * fork: `true`
   * commit: `true`
   * build: `true`
-  * test: `false`
+  * test: `true`
 
 Review:
   * new tests added: `false`
@@ -10,4 +10,4 @@ Review:
 
 Tests do **not** compile! Please fix them!
 
-**Grade: 3**
+**Grade: 5.25**
